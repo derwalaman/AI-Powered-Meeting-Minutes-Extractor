@@ -18,20 +18,15 @@ A Node.js Express backend service that processes raw meeting text or `.txt` file
 
 ---
 
-## 📂 Project Structure
+## 📂 Gemini VS OpenAI
 
-AI-Powered-Meeting-Minutes-Extractor/
-    |---backend
-        |---controllers/meetingController.js
-        |---routes/meetingRoutes.js
-        |---samples/
-        |---uploads/
-        |---.env
-        |---app.js
-        |---gemini.js
-        |---openai.js
-        |---package-lock.json
-        |---package.json
+### 1. Gemini 
+- To use Gemini api, just clone this repository.
+- Make sure to upload your api key in .env file.
+
+### 2. OpenAI
+- To use OpenAI api, change the `extractInsights` import from `../gemini.js` to `../openai.js`.
+- Make sure to update your api key in .env file.
 
 ---
 
