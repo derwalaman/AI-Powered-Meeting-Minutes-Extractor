@@ -56,7 +56,7 @@ npm install
 PORT=5001
 GEMINI_API_KEY=AIza...your_google_gemini_api_key
 ```
-- - 🔑 Get your free API key at: https://aistudio.google.com
+- 🔑 Get your free API key at: https://aistudio.google.com
 
 ### 4. Run the Server
 
