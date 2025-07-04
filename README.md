@@ -45,7 +45,7 @@ cd AI-Powered-Meeting-Minutes-Extractor
 npm install
 ```
 
-### 3. Create .env File
+### 3. Create or Update .env File
 
 ```bash
 PORT=5001
@@ -53,7 +53,18 @@ GEMINI_API_KEY=AIza...your_google_gemini_api_key
 ```
 - 🔑 Get your free API key at: https://aistudio.google.com
 
-### 4. Run the Server
+### 4. Command to run on terminal for reuslt 
+
+```bash 
+curl -X POST http://localhost:5001/process-meeting \
+  -H "Content-Type: application/json" \
+  -d '{"text": "- Launch on July 10\n- Raj to finalize testing report by July 7\n- Team agrees to focus on performance issues."}'
+
+curl -X POST http://localhost:5001/process-meeting \
+  -F "file=@samples/meeting1.txt"
+```
+
+### 5. Run the Server
 
 ```bash
 npm run dev
